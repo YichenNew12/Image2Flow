@@ -24,8 +24,14 @@ Pandas 2.1.3
 
 ### Structure
 In **step 1**, We clip the satellite images of the ROI into $N$ patches according to the division of the spatial areas, and learn a representation vector $r_i$ for each satellite image $v_i$ to characterize the visual attributes of terrestrial entities in a self-supervised manner. 
+
 `train_img_encoder.py`: We train an encoder using the contrastive loss.
+
 `get_img_embedding.py`: We extract the visual feature $r_i$ from satellite image $v_i$ based on the learned encoder.
+
+
 In **step 2**, we regard the $N$ areas within the ROI as a graph structure to consider the geographical location, distance and nearby influences to predict the OD flows. 
+
 `train_ODPrediction.py`: We train the OD prediction model using an 8:2:2 split. 
+
 `test_ODPrediction.py`: To test the transferability, we test our model on an unseen city after training.
