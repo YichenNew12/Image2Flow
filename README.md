@@ -6,4 +6,17 @@ Understanding dynamically changing urban built environments and their associated
 
 
 ## Code
+### Requirements
 
+```
+torch 1.13.1
+torchvision 0.14.1
+torch_geometric 2.4.0
+torch-scatter 2.1.1
+torch-sparse 0.6.17
+torch-spline-conv 1.2.2
+DeepGraphLibrary 1.1.2
+Scikit-Learn 1.3.2
+Numpy 1.26.1
+Pandas 2.1.3
+```
